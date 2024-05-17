@@ -15,7 +15,8 @@ let mother = {
 // Function to generate a random message
 function generateMessage() {
     const randomIndex = Math.floor(Math.random() * messages.length);
-    alert(messages[randomIndex]);
+    const messageElement = document.getElementById("message");
+    messageElement.textContent = messages[randomIndex];
 }
 
 // Array of messages to display

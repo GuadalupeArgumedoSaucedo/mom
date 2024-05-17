@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="background-container"></div>
-    <h1 class="text-center">Feliz día de las madres</h1>
-    <button type="button" class="btn btn-primary me-2" onclick="generateMessage()">Click me</button>
-
+    <div class="background-container">
+        <h1 class="text-center">Feliz día de las madres</h1>
+        <button type="button" id="butto" class="btn btn-primary me-2" onclick="generateMessage()">Click me</button>
+        <div id="message" class="message-text"></div> <!-- Added class "message-text" -->
+    </div>
+    <img src="/images/mom.jpg" alt="Mom" class="center-image">
     <script src="script.js"></script>
 </body>
 </html>
+

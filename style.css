@@ -1,14 +1,49 @@
 body {
-    background-image: url("/images/sunflowers.jpg");
-    background-color: #cccccc;
-   }
-.background-container {
     margin: 0;
     padding: 0;
+}
+
+.background-container {
+    background-image: url("/images/sunflowers.jpg");
+    background-color: transparent; /* Set background color to transparent */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh; /* Adjusted to cover the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 20px; /* Adjust this value to control the space between the text and the top of the background container */
+    position: relative; /* Needed for positioning the mom image */
+    text-align: center;
 }
 
+.text-center {
+    color: rgb(247, 0, 255); /* Set text color to white */
+    font-size: 2em; /* Set font size to 2em (adjust as needed) */
+}
+
+.message-text {
+    color: rgb(255, 255, 255); /* Set text color to white */
+    font-size: 1.5em; /* Set font size to 1.5em (adjust as needed) */
+}
+
+.center-image {
+    position: absolute; /* Positioning the mom image absolutely */
+    top: 50%; /* Positioning it at the vertical center */
+    left: 50%; /* Positioning it at the horizontal center */
+    transform: translate(-50%, -50%); /* Centering trick */
+    width: 28%; /* Adjust the width as needed */
+}
+
+#message{
+    padding-top: 25px;
+}
+
+#butto{
+background-color:rgb(255, 230, 0) ;
+color: rgb(118, 0, 122);
+}
 
 
